@@ -381,3 +381,55 @@ function Eben(){
 Eben();
 
 Racheal();
+
+let word = 'Racheal is learning how to use function in javascript';
+
+function Racheal(){
+    console.log(word);
+}
+
+function OutPutHello(){
+    console.log('Hello');
+}
+OutPutHello();
+
+// How to write Arrow Function
+
+let currentLocation = ()=>{
+
+}
+currentLocation();
+
+let lesii = () =>{
+
+}
+lesii();
+
+const precious = () =>{
+    console.log('Precious is learning how to use arrow function in javascript');
+}
+precious();
+
+function shalom(a = 6, b = 3, c = 4){
+
+    let sumTotal = a + b + c;
+    console.log(sumTotal);
+}
+shalom();
+
+//A function that adds two numbers
+function addNum(num1, num2, emeka){
+    console.log(num1 + num2 + emeka);
+}
+
+addNum(5, 6, 9);
+
+//DOM Document Object Model
+//DOM is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content.
+
+//Single Element Selector
+let form = document.getElementById('my-form');
+console.log(form);
+
+let Newform = document.querySelector('h1');
+console.log(Newform);
