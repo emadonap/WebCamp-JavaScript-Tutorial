@@ -42,7 +42,7 @@ box1.addEventListener('dblclick', function(){
 
 // CLICK EVENT
 function AddAlert(){
-    alert('Hello World');
+    // alert('Hello World');
 }
 
 setInterval(() => {
@@ -51,7 +51,7 @@ setInterval(() => {
 
 box2.addEventListener('click', function(){
     box1.style.width = '80%';
-    box2.style.height = '10%';
+    box2.style.width = '50%';
     box2.style.background = 'green';
     box3.style.width = '60%';
 });
@@ -62,11 +62,32 @@ box2.addEventListener('click', function(){
 // MOUSE-ENTER EVENT
 box3.addEventListener('mouseenter', function(){
     box3.style.background = 'red';
-    box3.style.width = '80%';
-    box3.style.height = '10%';
+    // box3.style.width = '80%';
+    // box3.style.height = '10%';
 });
 
 // MOUSE-LEAVE EVENT
 box3.addEventListener('mouseleave', function(){
     box3.style.backgroundColor = 'fuchsia';
 })
+
+// CHANGE EVENT
+let imgupload = document.querySelector('#imgupload');
+imgupload.addEventListener('change', function(){
+    alert('Image uploaded successfully');
+});
+
+let country = document.querySelector('#country');
+let body = document.querySelector('body');
+
+country.addEventListener('change', function(){
+    alert('Country selected');
+    body.style.background = '#add';
+});
+
+// INPUT EVENT
+let typeBox = document.querySelector('#typeBox');
+let firstname = document.querySelector('#firstname');
+firstname.addEventListener('input', function(){
+    typeBox.innerHTML = 'Typing...';
+});
